@@ -93,14 +93,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const resetButton = document.createElement('button');
     resetButton.textContent = 'Reset Game';
     resetButton.onclick = resetGame;
-    resetButton.style.position = 'absolute';
-    resetButton.style.top = '10px';
-    resetButton.style.right = '10px';
+    resetButton.style.position = 'fixed';
+    resetButton.style.bottom = '20px';
+    resetButton.style.left = '50%';
+    resetButton.style.transform = 'translateX(-50%)';
     resetButton.style.padding = '10px';
-    resetButton.style.backgroundColor = '#4caf50'; /* Green */
-    resetButton.style.color = '#fff';
+    resetButton.style.backgroundColor = '#00BCD4';
+    resetButton.style.color = '#005e74';
     resetButton.style.border = 'none';
     resetButton.style.cursor = 'pointer';
     resetButton.style.zIndex = '1';
+    resetButton.style.borderRadius = '10px';
     document.body.appendChild(resetButton);
-});
+}); 
